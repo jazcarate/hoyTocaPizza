@@ -55,7 +55,7 @@ setTimeout(function(){
 			setTimeout(function(){
 				gauge.value(Math.random());
 				setTimeout(function(){
-					gauge.value(0.5);
+					gauge.value(Math.random());
 					setTimeout(function(){
 						gauge.value(Math.random());
 						setTimeout(function(){
