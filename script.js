@@ -32,10 +32,15 @@ function Gauge(el) {
 	return exports;
 };
 
-function pizza(el){
+function pizzaYEmpanadas(){
 	var rta = document.createElement("h3");
-	rta.textContent = "¡Pizzas!";
+	rta.textContent = "¡Pizzas y Empanadas!";
+	
+	var subRta = document.createElement("h4");
+	subRta.textContent = "Somos inclusivos";
+	
 	document.body.appendChild(rta);
+	document.body.appendChild(subRta);
 };
 
 var gauge = new Gauge(document.getElementById("gauge"));
@@ -54,8 +59,8 @@ setTimeout(function(){
 					setTimeout(function(){
 						gauge.value(Math.random());
 						setTimeout(function(){
-							gauge.value(1.0);
-							pizza();
+							gauge.value(0.5);
+							pizzaYEmpanadas();
 						}, 1000);
 					}, 1000);
 				}, 1000);
